@@ -61,3 +61,35 @@ h1.textContent = siteContent["cta"]["h1"];
 const button = document.querySelector('button');
 button.textContent = siteContent["cta"]["button"];
 
+const topContent = document.querySelector('div.top-content');
+const topH4 = topContent.querySelectorAll("div.text-content > h4");
+const topP = topContent.querySelectorAll("div.text-content > p");
+console.log(topContent);
+topH4[0].textContent = siteContent["main-content"]["features-h4"];
+topH4[1].textContent = siteContent["main-content"]["about-h4"];
+topP[0].textContent = siteContent["main-content"]["features-content"];
+topP[1].textContent = siteContent["main-content"]["about-content"];
+
+const botContent = document.querySelector('div.bottom-content');
+const botH4 = botContent.querySelectorAll("div.text-content > h4");
+const botP = botContent.querySelectorAll("div.text-content > p");
+console.log(botContent);
+botH4[0].textContent = siteContent["main-content"]["services-h4"];
+botH4[1].textContent = siteContent["main-content"]["product-h4"];
+botH4[2].textContent = siteContent["main-content"]["vision-h4"];
+botP[0].textContent = siteContent["main-content"]["services-content"];
+botP[1].textContent = siteContent["main-content"]["product-content"];
+botP[2].textContent = siteContent["main-content"]["vision-content"];
+
+const contactSection = document.querySelector(".contact");
+console.log(contactSection);
+const contactH4 = contactSection.querySelector("h4");
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+const contactP = contactSection.querySelectorAll("p");
+contactP[0].textContent = siteContent["contact"]["address"];
+contactP[1].textContent = siteContent["contact"]["phone"];
+contactP[2].textContent = siteContent["contact"]["email"];
+
+const footerText = document.querySelector('footer > p');
+console.log(footerText);
+footerText.textContent = siteContent["footer"]["copyright"];
